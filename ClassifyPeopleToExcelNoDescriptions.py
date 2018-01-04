@@ -7,6 +7,21 @@
 # see also https://openpyxl.readthedocs.io/en/default/tutorial.html#playing-with-data
 # updated to send data to an Excel file instead of a text file
 
+# The input file must have screen_name in column 2, description in column 5, 
+# and source in column 26.
+
+# There is text output that can be piped to another file or ignored. It is used here as a 
+# status and debugging tool.
+
+# use
+# python ClassifyPeopleToExcelNoDescriptions.py new_excel-file.xlsx terms.txt> out_no_decscript_new_excel-file.txt
+
+# This will create a file called out_no_decscript_new_excel-file.xlsx in which all 
+# the terms are column names and each row is the Twitter name.
+
+# Example output on Google docs at
+# https://drive.google.com/open?id=1kJPnDu2RjFXBPydmCnCQxRwxH9-Re8gERO98KFANhVU
+
 from openpyxl import Workbook
 from openpyxl import load_workbook
 #from __future__ import print_function
