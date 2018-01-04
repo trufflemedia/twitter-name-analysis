@@ -3,6 +3,13 @@
 # This is used to help know where data originated.
 # see info at http://zetcode.com/articles/openpyxl/
 
+
+# use
+# python AddColumnFilename.py excel-file.xlsx
+# 
+# This will create a file called new_ex/cel-file.xlsx in which the last
+# column of each row contains "excel-file.xlsx"
+
 from openpyxl import Workbook
 from openpyxl import load_workbook
 
